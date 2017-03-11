@@ -1,2 +1,5 @@
 name: Rico Mossesgeld
 markdown: kramdown
+
+sass:
+    style: compressed
