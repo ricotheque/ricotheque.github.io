@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/default.css">
 </head>
 <body>
 <div class="site-header-wrap">    
     <header class="site-header cf">
         <h1 class="title"><a class="link" href="/">Rico Mossesgeld</a></h1>
         <nav class="site-navigation">
-            <a class="button -coloronhoveronly" href="/blog">Blag!</a>
+            <a class="button -coloronhoveronly" href="/questions">Q & A</a>
             <a class="button -coloronhoveronly" href="/cv">CV</a>
             <a class="button -coloronhoveronly" href="/contact">Contact</a>
         </nav>
@@ -18,7 +18,9 @@
 </div>
 
 <main class="site-content cf">
+    <article class="article-box">
     {{ content }}
+    </article>
 </main>
 
 <div class="site-footer-wrap">

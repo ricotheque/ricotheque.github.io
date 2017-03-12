@@ -1,0 +1,15 @@
+---
+layout: default
+title: Questions (and sometimes Answers)
+---
+<h1 class="title -article">{{ page.title }}</h1>
+<ul class="questions-list">
+    {% for post in site.posts %}
+    <li class="question-item">
+    <span class="date">{{ post.date | date_to_string }}</span>
+        <h2 class="title">
+            <a class="link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </h2>
+    </li>
+    {% endfor %}
+</ul>

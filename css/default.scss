@@ -56,6 +56,18 @@ a,
     margin: 0.5em 0;
 }
 
+.questions-list {
+    .question-item > .date,
+    .question-item > .title {
+        display: block;
+        font-weight: 300;
+        font-family:  $sans;
+    }
+    .question-item > .title {
+
+    }
+}
+
 /* Layout */
 .site-header-wrap {
     width: 100%;
