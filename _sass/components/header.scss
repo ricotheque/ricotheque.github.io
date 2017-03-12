@@ -1,0 +1,56 @@
+.header-box {
+    & {
+        width: 100%;
+        color: $header_color;
+        background-color: $header_background_color;
+    }
+    & > .header-inner {
+        @include cf();
+        padding: 1em;
+        margin: 0 auto;
+        width: 100%;
+        max-width: $max_width;
+    }
+    & > .header-inner > .site-name,
+    & > .header-inner > .site-navigation {
+        margin: 0;
+        line-height: 1;
+    }
+    & > .header-inner > .site-name > .link,
+    & > .header-inner > .site-navigation > .link {
+        color: $header_link_color;
+    }
+    & > .header-inner > .site-name > .link:hover,
+    & > .header-inner > .site-navigation > .link:hover {
+        color: $header_link_hover_color;
+        text-decoration: none;
+    }
+    & > .header-inner > .site-name {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    & > .header-inner > .site-navigation {
+        font-size: 0;
+    }
+    & > .header-inner > .site-navigation > .link {
+        display: inline-block;
+        margin-right: 1em;
+        padding-top: 1em;
+        font-size: 1rem;
+    }
+    & > .header-inner > .site-navigation > .link:last-child {
+        margin-right: 0;
+    }
+    @include media-up( 'mobile_landscape' ) {
+        & > .header-inner > .site-name {
+            float: left;
+        }
+        & > .header-inner > .site-navigation {
+            float: right;
+        }
+        & > .header-inner > .site-navigation > .link {
+            padding-top: 0;
+            line-height: 1.5em;
+        }
+    }
+}

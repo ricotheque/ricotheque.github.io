@@ -1,0 +1,5 @@
+body {
+    font: $global_font_weight #{$global_font_size}/#{$global_line_height} $global_font_family;
+    color: $global_color;
+    background-color: $global_background_color;
+}

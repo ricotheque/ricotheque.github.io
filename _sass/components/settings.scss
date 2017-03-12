@@ -1,0 +1,27 @@
+
+
+$sans_1: 'Helvetica Neue', Helvetica, sans-serif;
+
+
+$max_width: 64em;
+
+$global_font_weight: 300;
+$global_font_size: 16px;
+$global_line_height: 1.3846153846;
+$global_font_family: $sans_1;
+
+$global_color: #c6d4df;
+$global_background_color: #1b2838;
+
+$link_color: #67c1f5;
+$link_hover_color: #ffffff;
+
+$header_color: #b8b6b4;
+$header_background_color: #171a21;
+$header_link_color: inherit;
+$header_link_hover_color: $link_hover_color;;
+
+$footer_color: $header_color;
+$footer_background_color: $header_background_color;
+$footer_link_color: $header_link_color;
+$footer_link_hover_color: $header_link_hover_color;

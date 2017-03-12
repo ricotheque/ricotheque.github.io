@@ -1,0 +1,20 @@
+.footer-box {
+    & {
+        width: 100%;
+        color: $footer_color;
+        background-color: $footer_background_color;
+    }
+    > .footer-inner {
+        width: 100%;
+        max-width: $max_width;
+        margin: 0 auto;
+        padding: 1em;
+    }
+    > .footer-inner > .link {
+        color: $footer_link_color;
+    }
+    > .footer-inner > .link:hover {
+        color: $footer_link_hover_color;
+    }
+}
+
