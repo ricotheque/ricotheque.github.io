@@ -2,14 +2,22 @@
     & {
         width: 100%;
     }
+    > .article-inner > .article-innermost > img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 0em;
+    }
     > .article-inner {
         margin: 0 auto;
         padding: 1em;
         width: 100%;
         max-width: $max_width;
     }
-    > .article-inner .headline {
-        font-weight: 400;
+    > .article-inner {
+        .heading, h1, h2, h3, h4, h5, h6 {
+            font-weight: 400;
+            line-height: 1.1;
+        }
     }
 
     > .article-inner > .article-innermost > *.-box {
@@ -31,15 +39,23 @@
         > .article-inner > .article-innermost > * {
             margin-right: 19.75rem;
         }
-        > .article-inner > .article-innermost > *.-alignright {
+        > .article-inner > .article-innermost > img {
+            max-width: calc( 100% - 19.75rem );
+            margin-right: 0;
+        }
+        > .article-inner > .article-innermost > *.-alignright,
+        > .article-inner > .article-innermost > *.-alignleft {
             float: right;
             clear: right;
             margin-top: 0;
             margin-right: 0;
             margin-left: 1rem;
+            max-width: 19.75rem;
+            max-width: 17.75rem;
         }
-        > .article-inner > .article-innermost > *.-alignright.-box {
-            max-width: 18.75rem;
+        > .article-inner > .article-innermost > *.-alignright + *,
+        > .article-inner > .article-innermost > *.-alignleft + * {
+            margin-top: -1em;
         }
     }
     @include media-up( 'tablet_landscape' ) {
@@ -52,9 +68,7 @@
             margin-top: 0;
             margin-right: 1rem;
             margin-left: 0;
-        }
-        > .article-inner > .article-innermost > *.-alignleft.-box {
-            max-width: 10rem;
+            max-width: 9rem;
         }
     }
 }
