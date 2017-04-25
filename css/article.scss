@@ -1,0 +1,31 @@
+---
+---
+
+@import 'boilerplate';
+
+.narrow-column {
+    & {
+        margin: 0 auto;
+        padding: 2em 0;
+        max-width: 30em;
+        text-align: center;
+        line-height: 1.25em;
+    }
+    > .title {
+        margin-bottom: 0;        
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    > .subtitle {
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        font-size: 1em;
+        //text-transform: uppercase;
+    }
+    > .subtitle > .link {
+        color: inherit;
+    }
+    > .subtitle > .link:hover {
+        color: #fff;
+    }    
+}

@@ -1,0 +1,99 @@
+@import 'sanitize';
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,700');
+
+$max-width: 80em;
+$border-color: 1px solid transparentize( #c6d4df, 0.5 );
+$font-family: 'Work Sans', Arial, sans-serif;
+$font-weight: 300;
+$line-height: 1.5;
+
+//$background-color: #1b2838;
+$background-color: #000;
+$color: #c6d4df;
+
+a {
+    color: #4f94bc;
+    text-decoration: none;
+    &:hover {
+        color: #fff;
+    }
+}
+
+strong {
+    font-weight: 700;
+}
+
+html {
+    font-size: 16px;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    background-color: $background-color;
+    color: $color;
+}
+::selection {
+    color: #333;
+    background-color: #ffff00;
+}
+
+.site-container {
+    max-width: $max-width;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.site-header {
+    & {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: $border-color;
+    }
+    > .title,
+    > .site-menu,
+    > .header-button {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    > .title {
+        margin: 0;
+        font-size: 1em;
+        line-height: 2rem;
+        text-transform: uppercase;
+    }
+    > .site-menu {
+        display: none;
+        margin: 0;
+        padding: 1rem;
+    }
+    > .header-button {
+        float: right;
+        padding: 0.5625rem 0.625rem;
+        border: none;
+    }
+    > .header-button > .bar {
+        background-color: #fff;
+        display: block;
+        width: 1.375rem;
+        height: 0.125rem;
+        border-radius: 1px;
+    }
+    > .header-button > .bar + .bar {
+        margin-top: 4px;
+    }
+}
+
+.site-footer {
+    & {
+        padding-top: 1rem;
+        margin-top: 1rem;
+        font-size: 0.75em;
+        border-top: $border-color;
+    }
+    > .link {
+        float: right;
+        color: #c6d4df;
+    }
+    > .link:hover {
+        color: #fff;
+    }
+}

@@ -1,8 +1,16 @@
-<footer class="footer-box">
-<div class="footer-inner">
-    &copy;2008 - {{ site.time | date: '%Y' }}
-</div>
-</footer>
-
+{% assign start_year = '2017' %}
+{% assign current_year = {{site.time | date: '%Y'}} %}
+        
+        </main> <!-- .site-content -->
+        <footer class="site-footer">
+            <span class="copyright">
+                &copy;{{ start_year }}
+                {% if current_year != start_year %}
+                     - {{ current_year }}
+                {% endif %}
+            </span>
+            <a class="link" href="about/">About this site</a>
+        </footer>
+    </div> <!-- .site-container -->
 </body>
 </html>
