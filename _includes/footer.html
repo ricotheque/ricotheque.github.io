@@ -9,7 +9,9 @@
                      - {{ current_year }}
                 {% endif %}
             </span>
-            <a class="link" href="about/">About this site</a>
+            {% if page.title != 'About' %}
+                <a class="link" href="/about/">About this site</a>
+            {% endif %}
         </footer>
     </div> <!-- .site-container -->
 </body>

@@ -1,7 +1,7 @@
 ---
 ---
 
-{% include jquery.js %}
+{% include boilerplate.js %}
 {% include rangeslider.js %}
 
 var sellLevels = '.site-content > .sell-levels > .sell-level';

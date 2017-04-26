@@ -44,6 +44,7 @@ html {
 
 .site-header {
     & {
+        position: relative;
         padding-bottom: 1rem;
         margin-bottom: 1rem;
         border-bottom: $border-color;
@@ -62,9 +63,26 @@ html {
     }
     > .site-menu {
         display: none;
+        position: absolute;
+        top: 2em;
+        right: 0;
         margin: 0;
         padding: 1rem;
+
+        background: #333;
+        z-index: 11;
     }
+    > .site-menu.-showing {
+        display: block;
+    }
+    > .site-menu > .item-list {
+        margin: 0;
+        padding: 0.5em 0;
+        list-style: none;
+    }
+    > .site-menu > .item-list > .menu-item {
+        padding: 0.5em;
+    }    
     > .header-button {
         float: right;
         padding: 0.5625rem 0.625rem;
@@ -79,6 +97,12 @@ html {
     }
     > .header-button > .bar + .bar {
         margin-top: 4px;
+    }
+    > .header-button:focus {
+        outline: none;
+    }
+    > .header-button.-showing {
+        background: #333;
     }
 }
 
