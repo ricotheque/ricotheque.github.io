@@ -1,0 +1,18 @@
+---
+---
+
+@import 'boilerplate';
+@import 'rouge-highlight';
+
+.post-container {
+    max-width: 40em;
+    margin: 0 auto;
+}
+.post-container > .post-title {
+    font-size: 2em;
+    line-height: 1.1;
+}
+
+blockquote {
+    @extend .highlight;
+}

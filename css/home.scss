@@ -73,10 +73,6 @@ html {
     }    
 }
 
-.site-footer {
-    display: none;
-}
-
 ._blinking {
     animation: blinker 1s linear infinite;
 }
@@ -93,7 +89,7 @@ $gold-bg: linear-gradient(to bottom, #d5cea6 0%,#c9c190 40%,#b7ad70 100%);
 }
 .spinning-sign-container {
     position: absolute;
-    left: 50%;
+    left: ($sign-width / 2) + 10px;
     top: 10px;
     margin-left: -( $sign-width / 2 );
     // margin-top: -( $sign-height / 2 );
@@ -226,6 +222,15 @@ $seal-color: #760B1F;
     transform: rotate(-30deg);
 }
 
+.best-viewed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.75em;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 
 .testimonial-stream {

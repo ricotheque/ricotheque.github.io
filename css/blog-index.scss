@@ -1,0 +1,56 @@
+---
+---
+
+@import 'boilerplate';
+
+.site-posts-title {
+    font-size: 2em;
+    text-align: center;
+}
+.site-posts {
+    font-size: 0;
+    > .site-post {
+        display: inline-block;   
+        overflow: hidden;     
+        font-size: 1rem;
+        width: 100%;
+        position: relative;
+        @media (min-width: $mobile-landscape) {
+            width: 50%;
+            height: 0;            
+            padding-bottom: 50%;
+        }
+        @media (min-width: $tablet-landscape) {
+            width: 25%;
+            height: 0;
+            padding-bottom: 25%;
+        }
+    }
+    > .site-post > .site-post-inner {
+        @media (min-width: $mobile-landscape) {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    > .site-post > .site-post-inner > * {
+        line-height: 1;
+        margin: 0;
+        padding: 1rem 1rem 0;
+    }
+    > .site-post > .site-post-inner > *:last-child {
+        padding-bottom: 1rem;
+    }
+    > .site-post > .site-post-inner > .title {
+        font-size: 1.25em;
+    }
+    > .site-post > .site-post-inner > .date {
+        font-size: 0.75em;
+        text-transform: uppercase;
+    }
+    > .site-post > .site-post-inner > .excerpt {
+        line-height: 1.2;
+    }
+}

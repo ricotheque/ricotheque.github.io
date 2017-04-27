@@ -3,6 +3,10 @@
 
 @import 'boilerplate';
 
+.simple-title {
+    text-align: center;
+    font-size: 2em;
+}
 .narrow-column {
     & {
         margin: 0 auto;
@@ -29,3 +33,4 @@
         color: #fff;
     }    
 }
+
