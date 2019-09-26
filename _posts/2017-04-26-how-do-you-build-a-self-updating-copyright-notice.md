@@ -26,9 +26,11 @@ Figuring this out with Liquid templating tags required a bit of experimentation,
 {% assign current_year = {{site.time | date: '%Y'}} %}
         
 <span class="copyright">
-    &copy;{{ start_year }}
+    &copy;
     {% if current_year != start_year %}
-         - {{ current_year }}
+        {{ start_year }} - {{ current_year }}
+    {% else %}
+        {{ start_year }}
     {% endif %}
 </span>
 {% endraw %}
